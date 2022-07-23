@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<style>
+.grid {
+    display: grid;
+    grid-template-columns: 
+        [viewport-start] minmax(1em, 1fr)
+        [container-start] minmax(0, 30em) [container-end]
+        minmax(1em, 1fr) [viewport-end];
+}
+
+.item--contained {
+    grid-column: container;
+}
+
+.item--full { 
+    grid-column: viewport; 
+    display: inherit;
+    grid-template-columns: inherit;
+    
+    & > * {
+        grid-column: container;
+    }
+}
+h1 {text-align: center;}
+
+
+
+
+/* make it look pretty */
+body {
+    color: #333;
+    font-family: helvetica;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 1.35em;
+}
+h1 {
+    font-size: 1.75em;
+    font-weight: bold;
+    margin: .75em 0;
+}
+p {
+    margin-bottom: .75em;
+    
+    &:last-child {
+        margin: 0;
+    }
+}
+.item {
+    padding: 1em 0;
+}
+.blockquote {
+    padding: 2em 0;
+    color: #fff;
+    background: #82cac4;
+}
+
+</style>
+<head>
+</head>
+<body>
+    <main class="grid">
+    <div class="item item--contained">
+            <h1>Diary of a Doodler</h1>
+        </div>
+        <div class="item item--contained">
+            <img src="07_11_22.JPG" alt="notebook sketch 12" style="width:500px;height:650px;">
+            <p>Warrior King, DM (7/11/22).</p>
+        </div>
+        <div class="item item--contained">
+            <img src="07_08_22.JPG" alt="notebook sketch 11" style="width:500px;height:700px;">
+            <p>Scientific Process, DM (7/08/22).</p>
+        </div>
+        <div class="item item--contained">
+            <img src="07_01_22.JPG" alt="notebook sketch 10" style="width:500px;height:650px;">
+            <p>Dragon, DM (7/01/22).</p>
+        </div>
+        <div class="item item--contained">
+            <img src="06_20_22.JPG" alt="notebook sketch 9" style="width:500px;height:300px;">
+            <p>Untitled, DM (6/20/22).</p>
+        </div>
+        <div class="item item--contained">
+            <img src="05_21_22.JPG" alt="notebook sketch 8" style="width:500px;height:400px;">
+            <p>Untitled, DM (5/21/22).</p>
+        </div>
+        <div class="item item--contained">
+            <img src="05_01_22.JPG" alt="notebook sketch 7" style="width:500px;height:650px;">
+            <p>Beautiful, DM (5/01/22).</p>
+        </div>
+        <div class="item item--contained">
+            <img src="07_13_21.JPG" alt="notebook sketch 6" style="width:500px;height:700px;"> 
+            <p>Summer, DM (7/13/21).</p>
+        </div>
+        <div class="item item--contained">
+            <img src="07_2_21.JPG" alt="notebook sketch 5" style="width:500px;height:700px;">
+            <p>Untitled, DM (7/02/21).</p>
+        </div>
+        <div class="item item--contained">
+            <img src="06_12_21.JPG" alt="notebook sketch 4" style="width:500px;height:650px;">
+            <p>Lauryn Hill, DM (6/12/21).</p>
+        </div>
+        <div class="item item--contained">
+            <img src="01_25_21.JPG" alt="notebook sketch 3" style="width:500px;height:400px;"> 
+            <p>Tears, DM (1/25/21).</p>
+        </div>
+        <div class="item item--contained">
+            <img src="01_19_21b.JPG" alt="notebook sketch 2" style="width:500px;height:500px;">
+            <p>Timeless, DM (1/19/21).</p>
+        </div>
+        <div class="item item--contained">
+            <img src="01_19_21.JPG" alt="notebook sketch 1" style="width:500px;height:500px;">
+            <p>Drowning, DM (1/19/21).</p>
+        </div>
+    </main>
+    
+    
+
+</body>
+</html> 
+
+<!-- <div class="item item--contained">
+
+</div> -->
